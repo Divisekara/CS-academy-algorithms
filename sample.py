@@ -1,3 +1,3 @@
-for i in range(10, -5, -1):
-    print(i)
-
+L = [None] * 10
+L[0:3] = ['a', 'b', 'c']
+print(L)

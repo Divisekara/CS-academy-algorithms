@@ -7,6 +7,18 @@ def f(n):
         return 'b'
     if(n == 2):
         return 'c'
-    return f(n-1) + f(n-2) + f(n-3)
 
-print(f(n)[k-1])
+    a = 'a'
+    b = 'b'
+    c = 'c'
+
+    for i in range(2,n):
+        a,b,c = b,c, a+b+c
+    
+    return c
+
+word = f(n) 
+if(len(word) < k ):
+    print(-1)
+else:
+    print(word[k-1])
